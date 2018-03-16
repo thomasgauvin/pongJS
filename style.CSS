@@ -1,0 +1,44 @@
+body, html{
+    width: 99%;
+    height: 98%;
+}
+
+#mainCanvas{
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+}
+
+div.title{
+    text-align: center;
+}
+
+#player1, #player2{
+    width: 25px;
+    height: 150px;
+    background-color: white;
+}
+
+#player1{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+#player2{
+    position: absolute;
+    top: 10px;
+    left: 945px;
+}
+
+#dottedLine{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-style: none dashed none none;
+    border-width: 5px;
+    border-top-style: none; 
+    border-color: white;
+}
