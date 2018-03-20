@@ -3,10 +3,12 @@
     <meta charset="UTF-8"/>
     <title>Pong</title>
     <link rel='stylesheet' type='text/css' href='style.CSS'/>
+    <script src='game.js'></script>
 </head>
-<body>
+<body id="body" onkeydown="bodyListenerKeyDown(event)" onkeyup="bodyListenerKeyUp(event)">
+    <div name="instructions"><p>player instrcutions:</p></div>
     <div class='title'><h2>Welcome to Pong</h2></div>
-    <div name='canvas' id='mainCanvas'>
+    <div name='canvas' id='mainCanvas' tabindex="1">
         <table id='dottedLine' ><tr><td></td></tr></table>
         <div id = 'player1'></div>
         <div id = 'player2'></div>
