@@ -20,10 +20,11 @@ function step(){
 function  movePlayerUp(player, pixels){
     var count = 0;
     var interval = setInterval(function (){
-        console.log("here");
         position = player.getBoundingClientRect();
         parentPosition = player.parentElement.getBoundingClientRect();
-        player.style.top = (position.top-parentPosition.top)-1+'px';
+        if(position.top>parentPosition.top+5){
+            player.style.top = (position.top-parentPosition.top)-1+'px';
+        }
         if(++count === pixels){
             clearInterval(interval);
         }
@@ -33,10 +34,12 @@ function  movePlayerUp(player, pixels){
 function  movePlayerDown(player, pixels){
     var count = 0;
     var interval = setInterval(function (){
-        console.log("here");
         position = player.getBoundingClientRect();
         parentPosition = player.parentElement.getBoundingClientRect();
-        player.style.top = (position.top-parentPosition.top)+1+'px';
+        console.log(position.bottom<parentPosition.bottom);
+        if(position.bottom+5<parentPosition.bottom){
+            player.style.top = (position.top-parentPosition.top)+1+'px';
+        }
         if(++count === pixels){
             clearInterval(interval);
         }
@@ -71,4 +74,3 @@ var tick = function (){
 }
 
 tick();
-

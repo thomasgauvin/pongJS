@@ -42,3 +42,7 @@ div.title{
     border-top-style: none; 
     border-color: white;
 }
+
+#instructions{
+    float: left;
+}
