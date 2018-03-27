@@ -3,6 +3,7 @@
     <meta charset="UTF-8"/>
     <title>Pong</title>
     <link rel='stylesheet' type='text/css' href='style.CSS'/>
+    <script type="text/javascript" src="ballmvt.js"></script>
     <script src='game.js'></script>
 </head>
 <body id="body" onkeydown="bodyListenerKeyDown(event);" onkeyup="bodyListenerKeyUp(event);">
@@ -23,5 +24,8 @@
         <table id='dottedLine' ><tr><td></td></tr></table>
         <div id = 'player1'></div>
         <div id = 'player2'></div>
+        <div id = 'ball'></div>
+
     </div>
+    <button onclick="updateBallPosition()">Click here!</button>
 </body>
