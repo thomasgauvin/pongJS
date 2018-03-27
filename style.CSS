@@ -39,6 +39,17 @@ div.title{
     height: 100%;
     border-style: none dashed none none;
     border-width: 5px;
-    border-top-style: none; 
+    border-top-style: none;
     border-color: white;
+}
+
+#ball{
+    position: absolute;
+    left: 487.5px;
+    top: 287.5px;
+    background-color: white;
+    width:25px;
+    height:25px;
+    border-radius:12.5px;
+
 }
