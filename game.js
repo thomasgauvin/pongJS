@@ -4,8 +4,8 @@ var tickrate = 16;
 var aKeys =  new Array();
 aKeys[81] = false;  //q
 aKeys[65] = false;  //a
-aKeys[219] = false; //[
-aKeys[222] = false; //'
+aKeys[79] = false; //o
+aKeys[76] = false; //l
 
 //Starts the game
 function run(){
@@ -64,10 +64,10 @@ var tick = function (){
     if(aKeys[65]){
         movePlayerDown(document.getElementById("player1"), 5);
     }
-    if(aKeys[219]){
+    if(aKeys[79]){
         movePlayerUp(document.getElementById("player2"), 5);
     }
-    if(aKeys[222]){
+    if(aKeys[76]){
         movePlayerDown(document.getElementById("player2"), 5);
     }
     setTimeout(tick, tickrate)
