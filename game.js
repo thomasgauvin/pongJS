@@ -28,7 +28,7 @@ function  movePlayerUp(player, pixels){
         if(++count === pixels){
             clearInterval(interval);
         }
-    }, 16) 
+    }, 16)
 }
 
 function  movePlayerDown(player, pixels){
@@ -43,7 +43,7 @@ function  movePlayerDown(player, pixels){
         if(++count === pixels){
             clearInterval(interval);
         }
-    }, 16) 
+    }, 16)
 }
 
 //Listener for the body
@@ -70,7 +70,11 @@ var tick = function (){
     if(aKeys[76]){
         movePlayerDown(document.getElementById("player2"), 5);
     }
+    updateBallSpeed();
+    updateBallPosition();
+    // checkForHit();
+    moveball();
     setTimeout(tick, tickrate)
 }
 
-tick();
+// tick();

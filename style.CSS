@@ -44,13 +44,22 @@ div.title{
 }
 
 #ball{
-    position: absolute;
+    position: relative;
     left: 487.5px;
     top: 287.5px;
     background-color: white;
     width:25px;
     height:25px;
     border-radius:12.5px;
+
+}
+
+#score{
+  position:absolute;
+  width:1000px;
+  height:600px;
+  font: red;
+  font-size: 200px;
 
 }
 

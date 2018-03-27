@@ -4,7 +4,7 @@
     <title>Pong</title>
     <link rel='stylesheet' type='text/css' href='style.CSS'/>
     <script type="text/javascript" src="ballmvt.js"></script>
-    <script src='game.js'></script>
+    <script type="text/javascript" src='game.js'></script>
 </head>
 <body id="body" onkeydown="bodyListenerKeyDown(event);" onkeyup="bodyListenerKeyUp(event);">
     <div class='title'><h2>Welcome to Pong</h2></div>
@@ -14,7 +14,7 @@
                 <li>up: q</li>
                 <li>down: a</li>
             </ul></li>
-            <li>PLayer 2:<ul>
+            <li>Player 2:<ul>
                 <li>up: o</li>
                 <li>down: l</li>
             </ul></li>
@@ -22,10 +22,16 @@
     </div>
     <div name='canvas' id='mainCanvas' tabindex="1">
         <table id='dottedLine' ><tr><td></td></tr></table>
+        <div id = "score"><p>
+        00 00
+        </p>00 00</div>
         <div id = 'player1'></div>
         <div id = 'player2'></div>
         <div id = 'ball'></div>
 
     </div>
-    <button onclick="updateBallPosition()">Click here!</button>
+    <button onclick="tick()">Click here!</button>
+    <button onclick="history.go(0)">Reset</button>
+
+
 </body>
