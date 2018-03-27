@@ -53,3 +53,7 @@ div.title{
     border-radius:12.5px;
 
 }
+
+#instructions{
+    float: left;
+}
